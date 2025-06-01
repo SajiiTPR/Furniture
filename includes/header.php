@@ -82,23 +82,26 @@
 </head>
 
 <body>
-    <div class="sidebar">
-
+    <header class="sidebar">
         <div class="logo">
-            <img src="../assets/image/Logo-removebg-preview.png" alt="Furniture Logo" class="logoimg">
+            <img src="./assets/image/Logo-removebg-preview.png" alt="Furniture Logo" class="logoimg">
             <a class="navbar-brand" href="#">Furniture Hub</a>
         </div>
 
         <div class="nav">
 
-            <a href="#">Home</a>
-            <a href="./product.php">Product</a>
-            <a href="./cart.php">Cart</a>
-            <a href="./checkout.php">Checkout</a>
+            <a href="./home.php">Home</a>
+            <a href="./product.php">shop</a>
             <a href="./about.php">About</a>
+            <a href="./contact.php">contact</a>
+            <a href="./cart.php"><i class="fa-solid fa-cart-shopping"></i></a>
+
         </div>
-        <button class="logout-btn"><a class="btnlog" href="./logout.php">Logout</a></button>
-    </div>
+        <div class="profile">
+            
+            <p><i class="fa-solid fa-user"></i> <?php echo $_SESSION['user_name'] ?></p>
+        </div>
+    </header>
 
 </body>
 

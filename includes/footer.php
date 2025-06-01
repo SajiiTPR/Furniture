@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./footer.css">
     <title>Document</title>
 </head>
 
 <body>
     <footer class="footer">
+
         <nav>
             <h2>navigation</h2>
             <a href="./home.php">Home</a>
@@ -25,7 +26,7 @@
             <a href="https://github.com/SajiiTPR" class="text-white mx-2" target="_blank"><i class="fa-brands fa-github"></i></a>
         </section>
         <address>
-            <h2>Address</h2>
+            <h2>Contact</h2>
             <p class="address">Furniture Hub,</p>
             <p>Trincomalee,</p>
             <p>varothayanagar,</p>

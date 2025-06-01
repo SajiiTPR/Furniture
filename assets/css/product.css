@@ -22,6 +22,7 @@ h1 {
   align-items: center;
   justify-content: space-around;
   margin: 15px;
+  
 }
 .product-cart .product {
   position: relative;
@@ -107,30 +108,30 @@ h1 {
 }
 .search-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin: 20px auto; /* Add spacing around the container */
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
     padding: 10px;
 }
 
 .search-container input {
-    width: 50%; /* Adjust the width of the search field */
-    max-width: 600px; /* Limit the maximum width */
-    padding: 12px 20px; /* Add padding inside the field */
-    font-size: 16px; /* Set a readable font size */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 25px; /* Make the field rounded */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
-    transition: all 0.3s ease; /* Smooth transitions for hover/focus */
-    outline: none; /* Remove default outline */
+    width: 50%;
+    max-width: 600px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
 }
 
 .search-container input:focus {
-    border-color: #007BFF; /* Change border color on focus */
-    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4); /* Enhance shadow on focus */
+    border-color: #007BFF;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
 }
 
 .search-container input::placeholder {
-    color: #aaa; /* Placeholder text color */
-    font-style: italic; /* Italic style for the placeholder */
+    color: #aaa;
+    font-style: italic;
 }
