@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.logoimg{
+    width: 8%;
+}
+.hero {
+    background-image: url('assets/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.row img{
+    flex-basis: 30%;
+    height: 100%;
+    width: 100%;
+}
+
+.categories img {
+    transition: transform 0.3s ease;
+
+}
+
+.categories img:hover {
+    transform: scale(1.1);
+}
+.baner{
+    background: url(../image/baner.jpg) no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.baner h1{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+footer nav a i{
+    font-size: 30px;
+    margin: 0 20px;
+}

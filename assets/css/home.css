@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Content styling */
+.content {
+    text-align: center;
+    margin-top: 8em;
+    padding: 0 20px;
+}
+
+.content h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+.content p {
+    color: #666;
+    margin: 10px 0 20px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.buy-btn a {
+    background-color: #666;
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.buy-btn a:hover {
+    background-color:#212121;
+}
