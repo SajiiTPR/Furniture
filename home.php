@@ -2,8 +2,8 @@
 include 'includes/config.php';
 session_start();
 
-if(!isset($_SESSION['user_name'])){
-   header('location:login_form.php');
+if (!isset($_SESSION['user_name'])) {
+    header('location:login_form.php');
 }
 
 ?>
@@ -19,6 +19,22 @@ if(!isset($_SESSION['user_name'])){
     <link rel="stylesheet" href="./includes/footer.css">
 
     <title>Furniture Hub</title>
+    <style>
+        .logout-btn {
+            display: inline-block;
+            margin-left: 10px;
+            padding: 5px 10px;
+            background-color: #f44336;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .logout-btn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
 
 </head>
 
@@ -40,9 +56,12 @@ if(!isset($_SESSION['user_name'])){
 
         </div>
         <div class="profile">
-            
-            <p><i class="fa-solid fa-user"></i> <?php echo $_SESSION['user_name'] ?></p>
+            <i class="fa-solid fa-user"></i>
+            <span class="username"><?php echo $_SESSION['user_name']; ?></span>
+            <a href="logout.php" class="logout-btn">Logout</a>
         </div>
+
+
     </header>
 
     <main class="main">

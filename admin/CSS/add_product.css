@@ -7,9 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+  
 }
 
 .form-container {
@@ -17,14 +15,23 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px 30px;
-  width: 100%;
-  max-width: 400px;
+  width: 500px;
+  margin: 10vh auto;
+
+}
+.form-container form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin: 0 auto;
 }
 
 .form-container h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
+  color: linear-gradient(to right, #182848, #4b6cb7);
 }
 
 .form-container input,
@@ -40,19 +47,23 @@ body {
 
 .form-container textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 150px;
 }
 
 .form-container button {
-  background-color: #007bff;
+  background: linear-gradient(to right, #182848, #4b6cb7);
   color: white;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition:  0.2s ease-in-out;
 }
 
 .form-container button:hover {
-  background-color: #0056b3;
+  background: linear-gradient(to right, #4b6cb7, #182848);
+}
+.form-container button:active {
+  letter-spacing: .1em;
+  color: aqua;
 }
 
 .form-container input[type="file"] {

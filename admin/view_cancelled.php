@@ -12,7 +12,7 @@ $order_result = mysqli_query($conn, "
     SELECT orders.*, users.name AS user_name 
     FROM orders 
     JOIN users ON orders.user_id = users.id 
-    WHERE orders.status = 'Pending'
+    WHERE orders.status = 'Cancelled'
     ORDER BY orders.order_date DESC
 ");
 
@@ -26,16 +26,10 @@ $order_result = mysqli_query($conn, "
     <link rel="stylesheet" href="./CSS/nav.css">
     <title>View Orders</title>
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-
-        }
         body {
             font-family: Arial, sans-serif;
             background: #f7f9fc;
-            
+            padding: 20px;
         }
         .container {
             max-width: 2000px;
@@ -103,12 +97,12 @@ $order_result = mysqli_query($conn, "
 </head>
 <body>
     <div class="topbar">
-        <h1>View Order List</h1>
+        <h1>View cancelled List</h1>
         <a class="logout-btn" href="../logout.php">Logout</a>
     </div>
 <a href="dashboard.php" class="back-btn">← Back to Dashboard</a>
 <div class="container">
-<h2>Customer Orders</h2>
+<h2>Cancelled Orders</h2>
 
 <table>
     <tr>
