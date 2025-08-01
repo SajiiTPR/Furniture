@@ -20,7 +20,7 @@ $total_income = $income_row['total_income'] ?? 0;
     <title>Admin Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/nav.css">
-    <link rel="stylesheet" href="./Navigation/nav.css">
+    <link rel="stylesheet" href="./Navigation/sitebar.css">
     <style>
         * {
             box-sizing: border-box;

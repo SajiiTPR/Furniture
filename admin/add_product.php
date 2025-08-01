@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/add_product.css">
     <link rel="stylesheet" href="./CSS/nav.css">
-    <link rel="stylesheet" href="./Navigation/nav.css">
+    <link rel="stylesheet" href="./Navigation/sitebar.css">
     <title>Add Product</title>
     <style>
         * {
