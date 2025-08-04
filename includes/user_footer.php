@@ -4,20 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./user_footer.css">
     <title>Document</title>
 </head>
 
 <body>
     <footer class="footer">
-
         <nav>
             <h2>navigation</h2>
-            <a href="./home.php">Home</a>
-            <a href="./product.php">Product</a>
-            <a href="./cart.php">Cart</a>
-            <a href="./checkout.php">Checkout</a>
-            <a href="./about.php">About</a>
+            <a href="../user_home.php">Home</a>
+            <a href="../user_product.php">Product</a>
+            <a href="../user_cart.php">Cart</a>
+            <a href="../user_contact.php">Contact</a>
+            <a href="../user_about.php">About</a>
         </nav>
         <section class="social">
             <a href="https://www.facebook.com/share/1Vu1yYmDuu/" class="text-white mx-2" target="_blank"><i class="fa-brands fa-facebook"></i></a>

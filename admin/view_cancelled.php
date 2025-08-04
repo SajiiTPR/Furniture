@@ -24,102 +24,9 @@ $order_result = mysqli_query($conn, "
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/nav.css">
-    <link rel="stylesheet" href="./Navigation/sitebar.css">
+    <link rel="stylesheet" href="./CSS/Navigation.css">
+    <link rel="stylesheet" href="./CSS/shipped.css">
     <title>View Orders</title>
-    <style>
-        * {
-            padding: 0px;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f7f9fc;
-
-        }
-
-        main {
-            margin-left: 20em;
-        }
-
-        main .container {
-            margin: 0 auto;
-            width: 75vw;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #333;
-            text-align: center;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            text-align: left;
-            padding: 12px 15px;
-            border-bottom: 1px solid #ddd;
-            vertical-align: top;
-        }
-
-        th {
-            background-color: #4b6cb7;
-            text-shadow: 0 0 2px rgb(0, 0, 0);
-            color: white;
-            text-align: left;
-        }
-
-        tr:hover {
-            background-color: #f1f5f9;
-        }
-
-        .back-btn {
-            display: inline-block;
-            margin-bottom: 20px;
-            padding: 8px 16px;
-            background: linear-gradient(to right, #182848, #4b6cb7);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
-            font-weight: 600;
-            text-shadow: 0 0 2px rgb(0, 0, 0);
-            transition: background-color 0.3s ease;
-        }
-        .back-btn:hover {
-            background: linear-gradient(to right, #4b6cb7, #182848);
-        }
-
-        .update-btn {
-            background-color: #28a745;
-            color: white;
-            padding: 6px 12px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-top: 8px;
-            transition: background-color 0.3s ease;
-        }
-
-        .update-btn:hover {
-            background-color: #218838;
-        }
-
-        select {
-            padding: 5px;
-            border-radius: 4px;
-        }
-    </style>
 </head>
 
 <body>
@@ -128,7 +35,7 @@ $order_result = mysqli_query($conn, "
         <a class="logout-btn" href="../logout.php">Logout</a>
     </div>
 
-    <?php include "./Navigation/nav.php"; ?>
+    <?php include "./Navigation/Navigation.php"; ?>
 
     <main>
         <div class="container">

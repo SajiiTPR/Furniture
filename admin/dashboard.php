@@ -14,53 +14,13 @@ $total_income = $income_row['total_income'] ?? 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Admin Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/nav.css">
-    <link rel="stylesheet" href="./Navigation/sitebar.css">
-    <style>
-        * {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background: #f0f2f5;
-            min-height: 100vh;
-            position: relative;
-        }
-
-        .detailed {
-            cursor: default;
-            display: block;
-            text-align: center;
-            margin-left: 20rem;
-            margin-top: 15vh;
-            font-size: 1.3em;
-            line-height: 3em;
-            text-transform: capitalize;
-        }
-
-        .detailed h2 span {
-            color: #0056b3;
-            text-transform: capitalize;
-        }
-
-        .detailed h3 {
-            color: #cc0000;
-        }
-
-        .detailed h3 span {
-            color: #28a745;
-        }
-    </style>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./CSS/Navigation.css">
+    <link rel="stylesheet" href="./CSS/dashboard.css">
 </head>
-
 <body>
 
     <div class="topbar">
@@ -68,7 +28,9 @@ $total_income = $income_row['total_income'] ?? 0;
         <a class="logout-btn" href="../logout.php">Logout</a>
     </div>
 
-    <?php include "./Navigation/nav.php";?>
+    <!-- Navigation placeholder (would be replaced by PHP include in actual file) -->
+    
+    <?php include "./Navigation/Navigation.php";?>
 
     <section class="detailed">
         <h2>Welcome, <span><?php echo $_SESSION['admin_name'] ?></span></h2>
@@ -76,5 +38,4 @@ $total_income = $income_row['total_income'] ?? 0;
     </section>
 
 </body>
-
 </html>
