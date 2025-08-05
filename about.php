@@ -14,84 +14,94 @@ if (!isset($_SESSION['user_name'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/about.css">
-    <link rel="stylesheet" href="./includes/header.css">
-    <link rel="stylesheet" href="./includes/footer.css">
+    <link rel="stylesheet" href="./assets/css/About_Page.css">
+    <link rel="stylesheet" href="./assets/css/user_navigation.css">
+    <link rel="stylesheet" href="./assets/css/user_footer.css">
     <title>About Us</title>
 </head>
 
 <body>
-    <header class="sidebar">
-        <div class="logo">
-            <img src="./assets/image/Logo-removebg-preview.png" alt="Furniture Logo" class="logoimg">
-            <a class="navbar-brand" href="#">Furniture Hub</a>
+    <?php include "./user_navigation.php"; ?>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Crafting Spaces, <span class="highlight">Defining Lifestyles</span></h1>
+            <p>We blend artistry with functionality to create furniture that transforms houses into homes.</p>
+            <a href="#story" class="btn">Our Story</a>
         </div>
-
-        <div class="nav">
-
-            <a href="./home.php">Home</a>
-            <a href="./product.php">shop</a>
-            <a href="./about.php">About</a>
-            <a href="./contact.php">contact</a>
-            <a href="./cart.php"><i class="fa-solid fa-cart-shopping"></i></a>
-
-        </div>
-        <div class="profile">
-
-            <p><i class="fa-solid fa-user"></i> <?php echo $_SESSION['user_name'] ?></p>
-        </div>
-    </header>
-
-    <section class="about">
-        <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            Welcome to Furniture Hub, where elegance meets functionality in every piece of furniture. We are passionate about transforming houses into homes by offering timeless designs, exceptional quality, and unmatched customer service.
-            <br>
-            At Furniture Hub, we believe that furniture is more than just a utility—it’s a reflection of your personality and lifestyle. That’s why we curate a diverse range of styles, from modern minimalism to rustic charm, ensuring there’s something for everyone. Whether you're redesigning your living room, upgrading your workspace, or creating a cozy bedroom retreat, our collections are crafted to blend aesthetics with practicality.
-            <br>
-            Quality is at the heart of everything we do. We partner with skilled artisans and trusted manufacturers to bring you furniture that stands the test of time. Every piece is meticulously crafted from premium materials to ensure durability, comfort, and style.
-            <br>
-            Shopping with us is seamless and enjoyable. Our user-friendly website makes it easy to browse, compare, and purchase, while our detailed product descriptions and visuals help you envision how each piece will fit your space. Need guidance? Our dedicated customer support team is here to assist you every step of the way.
-            <br>
-            Discover a world of furniture that inspires creativity, comfort, and connection. At Furniture Hub, your dream space is just a click away. Start your journey with us today and redefine your living experience.
-
-        </p>
-        <img src="./assets/furnitures/about1.jpg" alt="Beautiful furniture collection">
-
-
     </section>
-    <div class="btn-click">
-        <button onclick="window.open('https://www.srilankanfurniture.lk', '_blank')">Furniture Website</button>
-    </div>
 
-    <footer class="footer">
-        <nav>
-            <h2>navigation</h2>
-            <a href="./home.php">Home</a>
-            <a href="./product.php">Product</a>
-            <a href="./cart.php">Cart</a>
-            <a href="./checkout.php">Checkout</a>
-            <a href="./about.php">About</a>
-        </nav>
-        <section class="social">
-            <a href="https://www.facebook.com/share/1Vu1yYmDuu/" class="text-white mx-2" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/sajith_mhd114/profilecard/?igsh=ZXc0dWxrOHNrcDZt" class="text-white mx-2" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@sajith_mhd.114?_t=ZS-8wWVgUxqwWQ&_r=1" class="text-white mx-2" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="https://github.com/SajiiTPR" class="text-white mx-2" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </section>
-        <address>
-            <h2>contact</h2>
-            <p class="address">Furniture Hub,</p>
-            <p>Trincomalee,</p>
-            <p>varothayanagar,</p>
-            <p>tel: +94 758220825</p>
-        </address>
-
-        <div class="copyright">
-            <p>&copy; Furniture System 2025 [ HNDIT ]</p>
+    <!-- Our Story Section -->
+    <section id="story" class="story">
+        <div class="container">
+            <h2>Our <span class="highlight">Journey</span></h2>
+            <p>Founded in 2010, our furniture system began with a simple vision: to create pieces that marry timeless design with modern functionality.</p>
+            <p>What started as a small workshop has grown into a renowned design studio, but we've never lost sight of our craft-first approach.</p>
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bc66ab0d-810e-4858-81d4-4ead4498f62d.png" alt="Craftsmen at work" class="story-image">
         </div>
+    </section>
 
-    </footer>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Our <span class="highlight">Approach</span></h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <h3>Premium Materials</h3>
+                    <p>We source only the finest woods and fabrics, ensuring durability and beauty that lasts generations.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Thoughtful Design</h3>
+                    <p>Every curve and corner is deliberately designed for both aesthetic appeal and practical functionality.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Sustainable Craft</h3>
+                    <p>We're committed to environmentally responsible practices at every stage of production.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2>Meet The <span class="highlight">Makers</span></h2>
+            <div class="team-cards">
+                <div class="team-card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f00ca021-9d3e-4170-87dd-b7678d15b89d.png" alt="Robert Lang">
+                    <h3>Robert Lang</h3>
+                    <p>Master Craftsman</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d1d390a1-31fe-4a53-8cee-023db3ca1104.png" alt="Sophia Chen">
+                    <h3>Sophia Chen</h3>
+                    <p>Lead Designer</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ec1da980-fff7-4d6f-a6fa-eaffe444a434.png" alt="James Wilson">
+                    <h3>James Wilson</h3>
+                    <p>Operations Director</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Space?</h2>
+            <p>Discover how our furniture system can elevate your home or office.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn">Browse Collections</a>
+                <a href="#" class="btn secondary">Book Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <?php include "./user_footer.php"; ?>
+
+    <script src="./assets/js/About.js"></script>
 </body>
 
 </html>

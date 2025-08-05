@@ -32,13 +32,19 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="./assets/css/contact.css">
-    <link rel="stylesheet" href="./includes/footer.css">
+    <link rel="stylesheet" href="./assets/css/Contact_page.css">
+    <link rel="stylesheet" href="./assets/css/user_navigation.css">
+    <link rel="stylesheet" href="./assets/css/user_footer.css">
 </head>
 
 <body>
-    <?php include "./includes/header.php"; ?>
+    <?php include "./user_navigation.php"; ?>
+
+    <h1>Contact Us</h1>
+
     <div class="contact-container">
+
+
         <!-- Left Info Section -->
         <section class="info">
             <h2>About the Designer</h2>
@@ -60,7 +66,7 @@ $conn->close();
                     <div class="cont">
                         <i class="fa-solid fa-envelope"></i>
                         <p>m.a.m.sajith114@gmail.com</p>
-                    </div>                    
+                    </div>
                 </div>
 
             </div>
@@ -92,7 +98,10 @@ $conn->close();
             </form>
         </section>
     </div>
-    <?php include "./includes/footer.php"; ?>
+
+    <?php include "./user_footer.php"; ?>
+
+    <script src="./assets/js/Contact.js" defer></script>
 </body>
 
 </html>
