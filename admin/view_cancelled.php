@@ -25,7 +25,7 @@ $order_result = mysqli_query($conn, "
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/Navigation.css">
-    <link rel="stylesheet" href="./CSS/shipped.css">
+    <link rel="stylesheet" href="./CSS/Shipped.css">
     <title>View Orders</title>
 </head>
 

@@ -93,8 +93,8 @@ if (!isset($_SESSION['user_name'])) {
             <h2>Ready to Transform Your Space?</h2>
             <p>Discover how our furniture system can elevate your home or office.</p>
             <div class="cta-buttons">
-                <a href="#" class="btn">Browse Collections</a>
-                <a href="#" class="btn secondary">Book Consultation</a>
+                <a href="./product.php" class="btn">Browse Collections</a>
+                <a href="./contact.php" class="btn secondary">Book Consultation</a>
             </div>
         </div>
     </section>

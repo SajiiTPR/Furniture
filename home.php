@@ -41,7 +41,7 @@ if (!isset($_SESSION['user_name'])) {
             <h2>Signature Collection</h2>
             <p>Our designer-curated collection represents the pinnacle of craftsmanship and innovative design. Each piece is created with sustainability and longevity in mind.</p>
             <p>Available for a limited time with custom upholstery options and personalization available upon request.</p>
-            <a href="#" class="btn">View Collection</a>
+            <a href="./product.php" class="btn">View Collection</a>
         </div>
     </section>
 
@@ -54,7 +54,7 @@ if (!isset($_SESSION['user_name'])) {
         <div class="testimonial-card">
             <p>"The quality of Modernā's furniture is exceptional. Our living room has never looked better!"</p>
             <div class="testimonial-author">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/20e070e4-35ee-4c66-9538-3e081135fb12.png" alt="Portrait of Sarah J. smiling outdoors" />
+                <img src="./assets/image/profile1.jpg" alt="Portrait of Sarah J. smiling outdoors" />
                 <div>
                     <div class="author-name">Sarah J.</div>
                     <div>Interior Designer</div>
@@ -64,7 +64,7 @@ if (!isset($_SESSION['user_name'])) {
         <div class="testimonial-card">
             <p>"Attention to detail and customer service are unmatched. Highly recommend!"</p>
             <div class="testimonial-author">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b5674b15-53a0-429b-8c99-9d86c04001c8.png" alt="Portrait of Michael T. in a business setting" />
+                <img src="./assets/image/profile-pic (3).png" alt="Portrait of Michael T. in a business setting" />
                 <div>
                     <div class="author-name">Michael T.</div>
                     <div>Homeowner</div>
@@ -74,7 +74,7 @@ if (!isset($_SESSION['user_name'])) {
         <div class="testimonial-card">
             <p>"Sustainable materials without compromising on design. Exactly what I was looking for."</p>
             <div class="testimonial-author">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8da9f987-cee0-44db-9294-0cacd81fad5d.png" alt="Portrait of Emily R. with cityscape background" />
+                <img src="./assets/image/profile3.jpeg" alt="Portrait of Emily R. with cityscape background" />
                 <div>
                     <div class="author-name">Emily R.</div>
                     <div>Architect</div>
