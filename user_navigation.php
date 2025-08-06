@@ -19,7 +19,7 @@
         </div>
 
         <div class="nav" id="navMenu">
-            <a href="./Home.php"><i class="fa-regular fa-house"></i> Home</a>
+            <a href="./Home.php"><i class="fa-solid fa-house"></i> Home</a>
             <a href="./product.php"><i class="fa-solid fa-shop"></i> Shop</a>
             <a href="./about.php"><i class="fa-solid fa-circle-info"></i> About</a>
             <a href="./contact.php"><i class="fa-regular fa-message"></i> Contact</a>
@@ -29,8 +29,6 @@
         <div class="profile">
             <span class="username" onclick="toggleDropdown()"><i class="fa-solid fa-user"></i> <?php echo $_SESSION['user_name'] ?></span>
             <div class="dropdown-content" id="dropdownMenu">
-                <a href=".profile.php"><i class="fa-regular fa-user"></i> Profile</a>
-                <a href="history.php"><i class="fa-solid fa-hourglass-end"></i> Order History</a>
                 <a href="setting.php"><i class="fa-solid fa-gear"></i> Settings</a>
                 <a href="./logout.php"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
             </div>
@@ -46,17 +44,13 @@
         <a href="./about.php"><i class="fa-solid fa-circle-info"></i> About</a>
         <a href="./contact.php"><i class="fa-regular fa-message"></i> Contact</a>
         <a href="./cart.php"><span class="cart-icon"><i class="fa-solid fa-cart-shopping"></i> Cart</span></a>
-        <a href=".profile.php"><i class="fa-regular fa-user"></i> Profile</a>
-        <a href="history.php"><i class="fa-solid fa-hourglass-end"></i> Order History</a>
         <a href="setting.php"><i class="fa-solid fa-gear"></i> Settings</a>
         <a href="./logout.php"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
     </div>
 
 
 
-    <script src="./user_navigation.js">
-
-    </script>
+    <script src="./assets/js/user_navigation.js"></script>
 </body>
 
 </html>

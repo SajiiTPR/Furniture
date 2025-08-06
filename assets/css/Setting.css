@@ -1,0 +1,215 @@
+:root {
+            --primary-color: #6c63ff;
+            --secondary-color: #4d44db;
+            --accent-color: #ff6584;
+            --dark-color: #2a2a72;
+            --light-color: #f8f9fa;
+            --success-color: #28a745;
+            --error-color: #dc3545;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            
+        }
+
+        #profile-form {
+            min-height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            flex-direction: column;
+            margin: 5rem auto;
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: var(--shadow-lg);
+            transform: translateY(0);
+            animation: floatUp 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes floatUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            position: relative;
+            width: 100%;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--dark-color);
+            transition: var(--transition);
+        }
+
+        .form-input {
+            width: 100%;
+            
+            padding: 12px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 20px;
+            transition: var(--transition);
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: var(--shadow-sm);
+            color: var(--dark-color);
+
+            
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+        }
+
+        .form-input:valid {
+            border-color: #ced4da;
+            box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.2);
+
+        }
+
+        .form-input:focus + .form-label {
+            color: var(--primary-color);
+        }
+
+        .error-message {
+            display: none;
+            color: var(--error-color);
+            font-size: 13px;
+            margin-top: 5px;
+            animation: shake 0.3s ease-in-out;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-5px); }
+            40%, 80% { transform: translateX(5px); }
+        }
+
+        .submit-btn {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 14px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .submit-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+            opacity: 0;
+            transition: var(--transition);
+            z-index: -1;
+        }
+
+        .submit-btn:hover::after {
+            opacity: 1;
+        }
+
+        /* Input error states */
+        .form-input.error {
+            border-color: var(--error-color);
+            animation: pulse 0.5s ease-in-out;
+        }
+
+        .form-input.success {
+            border-color: var(--success-color);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 576px) {
+            #profile-form {
+                padding: 20px;
+            }
+            
+            .form-input {
+                padding: 10px 14px;
+            }
+            
+            .submit-btn {
+                padding: 12px 20px;
+            }
+        }
+
+        /* Floating label effect */
+        .form-group.floating-label .form-label {
+            position: absolute;
+            top: 12px;
+            left: 16px;
+            background-color: white;
+            padding: 0 5px;
+            color: #999;
+            pointer-events: none;
+            transition: var(--transition);
+        }
+
+        .form-group.floating-label .form-input:focus + .form-label,
+        .form-group.floating-label .form-input:not(:placeholder-shown) + .form-label {
+            top: -10px;
+            left: 10px;
+            font-size: 12px;
+            color: var(--primary-color);
+            background-color: white;
+        }

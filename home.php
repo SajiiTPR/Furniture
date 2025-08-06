@@ -25,7 +25,7 @@ if (!isset($_SESSION['user_name'])) {
     <?php include "./user_navigation.php"; ?>
 
     <section class="hero">
-        <img src="https://placehold.co/1920x1080" alt="Modern living room with minimalist furniture, neutral tones, and natural lighting showcasing our signature collection" />
+        <img src="./assets/image/poster.jpg" alt="Modern living room with minimalist furniture, neutral tones, and natural lighting showcasing our signature collection" />
         <div class="hero-content">
             <h1>Crafting Comfort with Elegance</h1>
             <p>Discover handcrafted furniture that blends timeless design with modern functionality.</p>
@@ -35,7 +35,7 @@ if (!isset($_SESSION['user_name'])) {
 
     <section class="featured">
         <div class="featured-img">
-            <img src="https://placehold.co/800x600" alt="Featured designer chair with ergonomic design and premium leather upholstery in our showroom" />
+            <img src="./assets/image/baner.jpg" alt="Featured designer chair with ergonomic design and premium leather upholstery in our showroom" />
         </div>
         <div class="featured-content">
             <h2>Signature Collection</h2>

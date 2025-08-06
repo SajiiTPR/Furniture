@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
+    const messageContainer = document.createElement("div");
+    messageContainer.classList.add("form-message");
+    form.insertBefore(messageContainer, form.firstChild); // Insert message container at the top of the form
 
     form.addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent the default form submission
@@ -10,13 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const mobile = document.getElementById("mobile").value;
         const message = document.getElementById("message").value;
 
-        if (name && email && mobile && message) {
-            // Here you can add your AJAX request to send the form data
-            console.log("Form submitted successfully!");
-            alert("Thank you for your message!");
+        if (name && email && mobile && message) {            
             form.reset(); // Reset the form after submission
         } else {
-            alert("Please fill in all fields.");
+            
         }
     });
 });
