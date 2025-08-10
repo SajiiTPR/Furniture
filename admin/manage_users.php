@@ -6,7 +6,6 @@ if (!isset($_SESSION['admin_id'])) {
     header("Location: login.php");
     exit();
 }
-
 // Handle deletion if requested via GET
 if (isset($_GET['delete_id'])) {
     $delete_id = intval($_GET['delete_id']);
@@ -21,7 +20,6 @@ if (isset($_GET['delete_id'])) {
         }
     }
 }
-
 // Fetch all non-admin users
 $query = "SELECT id, name, email, user_type, created_at FROM users WHERE user_type != 'admin' ORDER BY id ASC";
 $result = mysqli_query($conn, $query);
@@ -33,7 +31,6 @@ if (!$result) {
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,14 +43,11 @@ if (!$result) {
         }
     </script>
 </head>
-
 <body>
     <div class="topbar">
         <h1>Manage Users</h1>
         <a class="logout-btn" href="../logout.php">Logout</a>
     </div>
-
-    <?php include "./Navigation/Navigation.php"; ?>
 
     <main>
         <div class="container">

@@ -10,7 +10,6 @@ if (!isset($_SESSION['user_name'])) {
 
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,17 +19,13 @@ if (!isset($_SESSION['user_name'])) {
     <link rel="stylesheet" href="./assets/css/user_navigation.css">
     <link rel="stylesheet" href="./assets/css/user_footer.css">
     <title>Home Furniture Store</title>
-
 </head>
-
 <body>
     <?php include "./user_navigation.php"; ?>
-
     <h1>buy to Furnitures</h1>
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search for products..." oninput="filterProducts()">
     </div>
-
     <!-- Product List -->
     <div class="product-cart" id="productList">
         <?php
@@ -51,12 +46,8 @@ if (!isset($_SESSION['user_name'])) {
         }
         ?>
     </div>
-
     <?php include "./user_footer.php"; ?>
-
     <script src="./assets/js/product.js"></script>
     <script src="./assets/js/user_navigation.js"></script>
-
 </body>
-
 </html>

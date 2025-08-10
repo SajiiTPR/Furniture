@@ -11,20 +11,16 @@ if (!isset($_SESSION['admin_id'])) {
 $income_result = mysqli_query($conn, "SELECT SUM(total_price) AS total_income FROM orders WHERE status = 'Delivered'");
 $income_row = mysqli_fetch_assoc($income_result);
 $total_income = $income_row['total_income'] ?? 0;
-
-
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./CSS/Navigation.css">
     <link rel="stylesheet" href="./CSS/Dashboard.css">
+    <title>Admin Dashboard</title>
     <script defer>
         function confirmRemove(name) {
             return confirm("Are you sure you want to remove user '" + name + "'?");
@@ -33,7 +29,6 @@ $total_income = $income_row['total_income'] ?? 0;
 </head>
 
 <body>
-
     <div class="topbar">
         <h1>Admin Dashboard</h1>
         <a class="logout-btn" href="../logout.php">Logout</a>

@@ -22,7 +22,6 @@ if (!isset($_SESSION['user_name'])) {
 
 <body>
     <?php include "./user_navigation.php"; ?>
-
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -31,7 +30,6 @@ if (!isset($_SESSION['user_name'])) {
             <a href="#story" class="btn">Our Story</a>
         </div>
     </section>
-
     <!-- Our Story Section -->
     <section id="story" class="story">
         <div class="container">
@@ -41,7 +39,6 @@ if (!isset($_SESSION['user_name'])) {
             <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bc66ab0d-810e-4858-81d4-4ead4498f62d.png" alt="Craftsmen at work" class="story-image">
         </div>
     </section>
-
     <!-- Features Section -->
     <section class="features">
         <div class="container">
@@ -62,7 +59,6 @@ if (!isset($_SESSION['user_name'])) {
             </div>
         </div>
     </section>
-
     <!-- Team Section -->
     <section class="team">
         <div class="container">
@@ -86,7 +82,6 @@ if (!isset($_SESSION['user_name'])) {
             </div>
         </div>
     </section>
-
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
@@ -98,9 +93,7 @@ if (!isset($_SESSION['user_name'])) {
             </div>
         </div>
     </section>
-
     <?php include "./user_footer.php"; ?>
-
     <script src="./assets/js/About.js"></script>
 </body>
 

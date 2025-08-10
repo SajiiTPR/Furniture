@@ -84,12 +84,6 @@ if (!isset($_SESSION['user_name'])) {
     </div>
 
     <?php include "./user_footer.php"; ?>
-
     <script src="./includes/user_navigation.js"></script>
-
-
-
-
 </body>
-
 </html>

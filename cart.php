@@ -5,12 +5,10 @@ session_start();
 if (!isset($_SESSION['user_name'])) {
     header('location:login_form.php');
 }
-
 // Initialize cart if not already
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = [];
 }
-
 // Handle add to cart
 if (isset($_GET['action']) && $_GET['action'] == 'add') {
     $id = $_GET['id'];
@@ -22,7 +20,6 @@ if (isset($_GET['action']) && $_GET['action'] == 'add') {
     header("Location: cart.php");
     exit();
 }
-
 // Handle remove from cart
 if (isset($_GET['action']) && $_GET['action'] == 'remove') {
     $id = $_GET['id'];
@@ -31,10 +28,8 @@ if (isset($_GET['action']) && $_GET['action'] == 'remove') {
     exit();
 }
 ?>
-
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,12 +39,9 @@ if (isset($_GET['action']) && $_GET['action'] == 'remove') {
     <link rel="stylesheet" href="./assets/css/user_footer.css">
     <title>Your Cart</title>
 </head>
-
 <body>
     <?php include "./user_navigation.php"; ?>
-
     <h1>Your Shopping Cart</h1>
-
     <?php
     if (!empty($_SESSION['cart'])) {
         $total = 0;
