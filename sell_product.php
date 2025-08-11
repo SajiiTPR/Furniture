@@ -14,14 +14,14 @@ if (!isset($_SESSION['user_name'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/Product.css">
-    <link rel="stylesheet" href="./assets/css/view.css">
-    <link rel="stylesheet" href="./assets/css/user_navigation.css">
-    <link rel="stylesheet" href="./assets/css/user_footer.css">
+    <link rel="stylesheet" href="./assets/css/sell_product.css">
+    <link rel="stylesheet" href="./assets/css/detailed.css">
+    <link rel="stylesheet" href="./assets/css/navigation_bar.css">
+    <link rel="stylesheet" href="./assets/css//footer_bottom.css">
     <title>Home Furniture Store</title>
 </head>
 <body>
-    <?php include "./user_navigation.php"; ?>
+    <?php include "./navigation_bar.php"; ?>
     <h1>buy to Furnitures</h1>
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search for products..." oninput="filterProducts()">
@@ -39,14 +39,14 @@ if (!isset($_SESSION['user_name'])) {
             echo "<h3>" . $row['name'] . "</h3>";
             echo "<p>Price: LKR." . $row['price'] . "</p>";
             echo "<div class='cart-option'>";
-            echo "<a class='view-details' href='view.php?id=" . $row['id'] . "'>View Details</a>";
-            echo "<a class='add-cart' href='cart.php?action=add&id=" . $row['id'] . "'>Add to Cart</a>";
+            echo "<a class='view-details' href='detailed.php?id=" . $row['id'] . "'>View Details</a>";
+            echo "<a class='add-cart' href='procedure.php?action=add&id=" . $row['id'] . "'>Add to Cart</a>";
             echo "</div>";
             echo "</div>";
         }
         ?>
     </div>
-    <?php include "./user_footer.php"; ?>
+    <?php include "./footer_bottom.php"; ?>
     <script src="./assets/js/product.js"></script>
     <script src="./assets/js/user_navigation.js"></script>
 </body>

@@ -79,7 +79,7 @@ if (isset($_GET['id'])) {
         <p class="category">Category: <?php echo htmlspecialchars($product['category']); ?></p>
         <p class="price">Price: LKR.<?php echo htmlspecialchars($product['price']); ?></p>
         <p><?php echo nl2br(htmlspecialchars($product['description'])); ?></p>
-        <a href="./product.php" class="back-link">Back to Products</a>
+        <a href="./sell_product.php" class="back-link">Back to Products</a>
     </div>
 </body>
 </html>

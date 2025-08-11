@@ -31,14 +31,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/chat.css">
-    <link rel="stylesheet" href="./assets/css/user_navigation.css">
-    <link rel="stylesheet" href="./assets/css/user_footer.css">
+    <link rel="stylesheet" href="./assets/css/message.css">
+    <link rel="stylesheet" href="./assets/css/navigation_bar.css">
+    <link rel="stylesheet" href="./assets/css/footer_bottom.css">
     <title>Contact Us</title>
 </head>
 
 <body>
-    <?php include "./user_navigation.php"; ?>
+    <?php include "./navigation_bar.php"; ?>
     <main>
         <div class="container">
             <h1 class="page-title">Contact Home Furniture</h1>
@@ -101,13 +101,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="form-row">
                             <div class="form-col">
                                 <div class="form-group">
-                                    <label for="name">Full Name*</label>
+                                    <label for="name">Full Name</label>
                                     <input type="text" id="name" name="name" required>
                                 </div>
                             </div>
                             <div class="form-col">
                                 <div class="form-group">
-                                    <label for="email">Email*</label>
+                                    <label for="email">Email</label>
                                     <input type="email" id="email" name="email" required>
                                 </div>
                             </div>
@@ -119,12 +119,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
 
                         <div class="form-group">
-                            <label for="subject">Subject*</label>
+                            <label for="subject">Subject</label>
                             <input type="text" id="subject" name="subject" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="message">Your Message*</label>
+                            <label for="message">Your Message</label>
                             <textarea id="message" name="message" required></textarea>
                         </div>
 
@@ -135,7 +135,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </main>
 
-    <?php include "./user_footer.php"; ?>
+    <?php include "./footer_bottom.php"; ?>
 
     <script src="./assets/js/contact.js"></script>
 </body>

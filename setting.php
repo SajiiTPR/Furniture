@@ -52,7 +52,7 @@ $stmt->close();
 </head>
 
 <body>
-    <?php include "./user_navigation.php"; ?>
+    <?php include "./navigation_bar.php"; ?>
     <h1>Edit Profile</h1>
     <p>Welcome, <?php echo htmlspecialchars($user['name']); ?>!</p>
     <form id="profile-form" method="POST" action="">
@@ -71,7 +71,7 @@ $stmt->close();
 
         <button type="submit" value="Update Profile" class="submit-btn">Update Profile</button>
     </form>
-    <?php include "./user_footer.php"; ?>
+    <?php include "./footer_bottom.php"; ?>
     <script src="./assets/js/Setting.js"></script>
 </body>
 

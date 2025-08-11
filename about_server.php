@@ -14,14 +14,14 @@ if (!isset($_SESSION['user_name'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/About_Page.css">
-    <link rel="stylesheet" href="./assets/css/user_navigation.css">
-    <link rel="stylesheet" href="./assets/css/user_footer.css">
+    <link rel="stylesheet" href="./assets/css/about_server.css">
+    <link rel="stylesheet" href="./assets/css/navigation_bar.css">
+    <link rel="stylesheet" href="./assets/css/footer_bottom.css">
     <title>About Us</title>
 </head>
 
 <body>
-    <?php include "./user_navigation.php"; ?>
+    <?php include "./navigation_bar.php"; ?>
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -88,12 +88,12 @@ if (!isset($_SESSION['user_name'])) {
             <h2>Ready to Transform Your Space?</h2>
             <p>Discover how our furniture system can elevate your home or office.</p>
             <div class="cta-buttons">
-                <a href="./product.php" class="btn">Browse Collections</a>
-                <a href="./contact.php" class="btn secondary">Book Consultation</a>
+                <a href="./sell_product.php" class="btn">Browse Collections</a>
+                <a href="./message.php" class="btn secondary">Book Consultation</a>
             </div>
         </div>
     </section>
-    <?php include "./user_footer.php"; ?>
+    <?php include "./footer_bottom.php"; ?>
     <script src="./assets/js/About.js"></script>
 </body>
 

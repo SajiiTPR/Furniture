@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/user_footer.css">
+    <link rel="stylesheet" href="./assets/css/footer_bottom.css">
     <title>Furniture System Footer</title>
 
 </head>
@@ -21,10 +21,10 @@
             <div class="footer-column">
                 <h3>Quick Links</h3>
                 <ul class="footer-links">
-                    <li><a href="./Home.php">Home</a></li>
-                    <li><a href="./product.php">Products</a></li>
-                    <li><a href="./contact.php">Contact</a></li>
-                    <li><a href="./about.php">About Us</a></li>
+                    <li><a href="./client_home.php">Home</a></li>
+                    <li><a href="./sell_product.php">Products</a></li>
+                    <li><a href="./message.php">Contact</a></li>
+                    <li><a href="./about_server.php">About Us</a></li>
                 </ul>
             </div>
 

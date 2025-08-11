@@ -17,30 +17,32 @@ if (isset($_GET['action']) && $_GET['action'] == 'add') {
     } else {
         $_SESSION['cart'][$id] = 1;
     }
-    header("Location: cart.php");
+    header("Location: procedure.php");
     exit();
 }
 // Handle remove from cart
 if (isset($_GET['action']) && $_GET['action'] == 'remove') {
     $id = $_GET['id'];
     unset($_SESSION['cart'][$id]);
-    header("Location: ./product.php");
+    header("Location: ./sell_product.php");
     exit();
 }
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/Cart_Page.css">
-    <link rel="stylesheet" href="./assets/css/user_navigation.css">
-    <link rel="stylesheet" href="./assets/css/user_footer.css">
+    <link rel="stylesheet" href="./assets/css/procedure.css">
+    <link rel="stylesheet" href="./assets/css/navigation_bar.css">
+    <link rel="stylesheet" href="./assets/css/footer_bottom.css">
     <title>Your Cart</title>
 </head>
+
 <body>
-    <?php include "./user_navigation.php"; ?>
+    <?php include "./navigation_bar.php"; ?>
     <h1>Your Shopping Cart</h1>
     <?php
     if (!empty($_SESSION['cart'])) {
@@ -70,7 +72,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'remove') {
             echo "<td>$quantity</td>";
             echo "<td>\$$price</td>";
             echo "<td>\$$subtotal</td>";
-            echo "<td><a href='cart.php?action=remove&id=$id'><i class='fa-solid fa-trash'></i></a></td>";
+            echo "<td><a href='procedure.php?action=remove&id=$id'><i class='fa-solid fa-trash'></i></a></td>";
             echo "</tr>";
         }
 
@@ -78,16 +80,16 @@ if (isset($_GET['action']) && $_GET['action'] == 'remove') {
         echo "</table>";
 
 
-        echo "<a class='check-out' href='checkout.php'>Proceed to Checkout</a>";
+        echo "<a class='check-out' href='order_checked.php'>Proceed to Checkout</a>";
         echo "</div>";
     } else {
         echo "<p class='empty-msg'>Your cart is empty.</p>";
     }
     ?>
 
-    <?php include "./user_footer.php"; ?>
-    
-    <script src="./assets/js/Cart.js" ></script>
+    <?php include "./footer_bottom.php"; ?>
+
+    <script src="./assets/js/Cart.js"></script>
     <script src="./assets/js/user_navigation.js" defer></script>
 </body>
 

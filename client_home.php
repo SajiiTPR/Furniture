@@ -14,22 +14,22 @@ if (!isset($_SESSION['user_name'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/user_navigation.css">
-    <link rel="stylesheet" href="./assets/css/Home.css">
+    <link rel="stylesheet" href="./assets/css/navigation_bar.css">
+    <link rel="stylesheet" href="./assets/css/client_home.css">
     <title>Furniture Hub</title>
 
 </head>
 
 <body>
 
-    <?php include "./user_navigation.php"; ?>
+    <?php include "./navigation_bar.php"; ?>
 
     <section class="hero">
         <img src="./assets/image/poster.jpg" alt="Modern living room with minimalist furniture, neutral tones, and natural lighting showcasing our signature collection" />
         <div class="hero-content">
             <h1>Crafting Comfort with Elegance</h1>
             <p>Discover handcrafted furniture that blends timeless design with modern functionality.</p>
-            <a href="./cart.php" class="btn">Explore Collections</a>
+            <a href="./sell_product.php" class="btn">Explore Collections</a>
         </div>
     </section>
 
@@ -41,7 +41,7 @@ if (!isset($_SESSION['user_name'])) {
             <h2>Signature Collection</h2>
             <p>Our designer-curated collection represents the pinnacle of craftsmanship and innovative design. Each piece is created with sustainability and longevity in mind.</p>
             <p>Available for a limited time with custom upholstery options and personalization available upon request.</p>
-            <a href="./product.php" class="btn">View Collection</a>
+            <a href="./sell_product.php" class="btn">View Collection</a>
         </div>
     </section>
 
@@ -83,7 +83,7 @@ if (!isset($_SESSION['user_name'])) {
         </div>
     </div>
 
-    <?php include "./user_footer.php"; ?>
+    <?php include "./footer_bottom.php"; ?>
     <script src="./includes/user_navigation.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_name'])) {
 }
 // Ensure cart is not empty
 if (!isset($_SESSION['cart']) || count($_SESSION['cart']) == 0) {
-    echo "Your cart is empty. <a href='./product.php'>Go shopping</a>";
+    echo "Your cart is empty. <a href='./sell_product.php'>Go shopping</a>";
     exit();
 }
 $user_id = $_SESSION['user_id'];
@@ -38,14 +38,14 @@ unset($_SESSION['cart']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/checkout.css">    
+    <link rel="stylesheet" href="./assets/css/order_checkout.css">    
     <title>Order Confirmed</title>
 </head>
 <body>
     <i class="fas fa-check-circle icon"></i>
     <h1>Thank you!</h1>
     <p>Your order has been placed successfully.</p>
-    <p><a href="./product.php">Continue Shopping</a></p>
+    <p><a href="./sell_product.php">Continue Shopping</a></p>
 </body>
 
 </html>
